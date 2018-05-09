@@ -28,7 +28,7 @@ public class arrayOperator {
             if (min>= myArray[i])
                 min= myArray[i];
         }
-        System.out.println("The maximum value is "+min);
+        System.out.println("The minimum value is "+min);
     }
 
     private static void findMax(int[] myArray) {
