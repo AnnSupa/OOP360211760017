@@ -1,51 +1,50 @@
 package Lab8;
-//1.Color -String
-//2.Brand -String
-//3.carID -String
-//4.Engine (has-a relation)
-
+//1. Color - String
+//2. Brand - String
+//3. carID - String
+//4. Engine  (has-a relation) - Engine
 public class Car {
-    private String Color;
-    private String Brand;
+    private String color;
+    private String brand;
     private String carID;
     private Engine engine;
 
-    //construcor
-    public void Car(){}
+    //constructor
+    public Car(){}
 
-    public Car(String color, String brand, String carID, Engine engine) {
-        Color = color;
-        Brand = brand;
+    public Car(String color, String brand, String carID,Engine engine) {
+        this.color = color;
+        this.brand = brand;
         this.carID = carID;
         this.engine = engine;
     }
-
     //toString
+
     @Override
     public String toString() {
         return "Car{" +
-                "Color='" + Color + '\'' +
-                ", Brand='" + Brand + '\'' +
+                "color='" + color + '\'' +
+                ", brand='" + brand + '\'' +
                 ", carID='" + carID + '\'' +
                 ", engine=" + engine +
                 '}';
     }
+    //getter and setter
 
-    //Getter And Setter
     public String getColor() {
-        return Color;
+        return color;
     }
 
     public void setColor(String color) {
-        Color = color;
+        this.color = color;
     }
 
     public String getBrand() {
-        return Brand;
+        return brand;
     }
 
     public void setBrand(String brand) {
-        Brand = brand;
+        this.brand = brand;
     }
 
     public String getCarID() {
